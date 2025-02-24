@@ -1,44 +1,28 @@
 # AnyLLM
 
-wearosllmchat/
-├── app/                            # Module directory for the app
+WatchApp/
+├── app/
 │   ├── build.gradle                # Module-level build configuration
 │   ├── proguard-rules.pro          # Proguard rules (empty by default)
 │   ├── src/
-│   │   ├── androidTest/            # Android instrumentation tests (empty for now)
-│   │   │   └── java/
-│   │   │       └── com/
-│   │   │           └── example/
-│   │   │               └── wearosllmchat/
-│   │   ├── main/                   # Main source directory
+│   │   ├── main/
 │   │   │   ├── AndroidManifest.xml # App manifest file
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── example/
-│   │   │   │           └── wearosllmchat/
-│   │   │   │               ├── MainActivity.kt       # Main activity with UI and logic
-│   │   │   │               ├── LLM.kt                # LLM interface
-│   │   │   │               └── OpenAIChatGPT.kt      # OpenAI ChatGPT implementation
-│   │   │   └── res/                          # Resources directory
-│   │   │       ├── drawable/                 # Drawable resources
-│   │   │       │   └── ic_launcher_background.xml
-│   │   │       ├── mipmap/                   # App icon resources
+│   │   │   ├── java/com/example/wearosllmchat/
+│   │   │   │   ├── MainActivity.kt       # Main activity with UI and logic
+│   │   │   │   ├── LLM.kt                # LLM interface
+│   │   │   │   └── OpenAIChatGPT.kt      # OpenAI ChatGPT implementation
+│   │   │   └── res/
+│   │   │       ├── mipmap/
 │   │   │       │   ├── ic_launcher.png
 │   │   │       │   └── ic_launcher_round.png
-│   │   │       ├── values/
-│   │   │       │   ├── strings.xml           # String resources
-│   │   │       │   ├── themes.xml           # App themes
-│   │   │       │   └── colors.xml           # Color definitions
-│   │   │       └── layout/                   # Layout files (empty, using Compose)
-│   │   └── test/                     # Unit tests (empty for now)
-│   │       └── java/
-│   │           └── com/
-│   │               └── example/
-│   │                   └── wearosllmchat/
+│   │   │       └── values/
+│   │   │           ├── strings.xml
+│   │   │           ├── themes.xml
+│   │   │           └── colors.xml
 ├── build.gradle                    # Project-level build configuration
-├── gradle/                         # Gradle wrapper files
-│   ├── gradle-wrapper.jar
-│   ├── gradle-wrapper.properties
+├── gradle/
+│   ├── gradle-wrapper.jar          # Gradle wrapper executable JAR
+│   ├── gradle-wrapper.properties   # Gradle wrapper configuration
 ├── gradlew                         # Gradle wrapper script (Unix)
 ├── gradlew.bat                     # Gradle wrapper script (Windows)
 └── settings.gradle                 # Gradle settings file
