@@ -1,0 +1,80 @@
+apply plugin: 'com.google.gms.google-service'
+apply plugin: 'com.google.firebase.firebase-crashlytics'
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.example.wearosllmchat"
+        minSdkVersion 28
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJunitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.wear:wear:1.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.5.0'
+    implementation 'com.google.firebase:firebase-core:20.2.0'
+    implementation 'com.google.firebase:firebase-messagings:23.3.0'
+    implementation 'com.google.firebase:firebase-perf:20.3.0'
+    implementation 'com.google.firebase:firebase-ads:22.0.0'
+    implementation 'com.google.firebase:firebase-inappmessenger:20.3.0'
+    implementation 'com.google.firebase:firebase-measurement-connector:19.0.0'
+    implementation 'com.google.firebase:firebase-measurement-sdk:20.4.0'
+    implementation 'com.google.firebase:firebase-auth:22.2.0'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore:24.9.0'
+    implementation 'com.google.firebase:firebase-functions:20.3.0'
+    implementation 'com.google.firebase:firebase-recommendations:19.0.0'
+    implementation 'com.google.firebase:firebase-dynamic-links:20.4.0'
+    implementation 'com.google.firebase:firebase-appdistribution:3.2.0'
+    implementation 'com.google.firebase:firebase-appindexing:19.1.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ndk:18.5.0'
+    implementation 'com.google.firebase:firebase-config:21.4.0'
+    implementation 'com.google.firebase:firebase-datatransport:19.0.0'
+    implementation 'com.google.firebase:firebase-inappmessenger-model:20.3.0'
+    implementation 'com.google.firebase:firebase-perf-ktx:20.3.0'
+    implementation 'com.google.firebase:firebase-measurement-ktx:20.4.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.2.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.9.0'
+    implementation 'com.google.firebase:firebase-functions-ktx:20.3.0'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx:20.4.0'
+    implementation 'com.google.firebase:firebase-appdistribution-ktx:3.2.0'
+    implementation 'com.google.firebase:firebase-appindexing-ktx:19.1.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.5.0'
+    implementation 'com.google.firebase:firebase-config-ktx:21.4.0'
+    implementation 'com.google.firebase:firebase-datatransport-ktx:19.0.0'
+    implementation 'com.google.firebase:firebase-inappmessenger-ktx:20.3.0'
+    implementation 'com.google.firebase:firebase-perf-playstorereporting:20.3.0'
+    implementation 'com.google.firebase:firebase-measurement-playstorereporting:20.4.0'
+    implementation 'com.google.firebase:firebase-auth-playstorereporting:22.2.0'
+    implementation 'com.google.firebase:firebase-storage-playstorereporting:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore-playstorereporting:24.9.0'
+    implementation 'com.google.firebase:firebase-functions-playstorereporting:20.3.0'
+    implementation 'com.google.firebase:firebase-dynamic-links-playstorereporting:20.4.0'
+    implementation 'com.google.firebase:firebase-appdistribution-playstorereporting:3.2.0'
+    implementation 'com.google.firebase:firebase-appindexing-playstorereporting:19.1.0'
+    implementation 'com.google.firebase:firebase-crashlytics-playstorereporting:18.5.0'
+    implementation 'com.google.firebase:firebase-config-playstorereporting:21.4.0'
+    implementation 'com.google.firebase:firebase-datatransport-playstorereporting:19.0.0'
+    implementation 'com.google.firebase:firebase-inappmessenger-playstorereporting:20.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+}
